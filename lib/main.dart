@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:render_object_gap_widget/gap.dart';
 
 void main() {
   runApp(const RenderObjectGapApp());
@@ -17,21 +18,21 @@ class RenderObjectGapApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: <Widget>[
-              const SizedBox(height: 25),
+              const Gap(25),
               const StyledText("Column"),
-              const SizedBox(height: 25),
+              const Gap(25),
               const StyledText("Column"),
-              const SizedBox(height: 50),
+              const Gap(50),
               Row(
                 children: const <Widget>[
-                  SizedBox(width: 25),
+                  Gap(25),
                   StyledText("Row"),
-                  SizedBox(width: 25),
+                  Gap(25),
                   StyledText("Row"),
-                  SizedBox(width: 25),
+                  Gap(25),
                 ],
               ),
-              const SizedBox(height: 25),
+              const Gap(25),
             ],
           ),
         ),
